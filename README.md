@@ -1,4 +1,4 @@
-# passwordchecker in React Native
+# React-Native-Password-Checker
 This is a side project extracted from one of my main projects
 It is a simple and reusable password checker
 Based on the input entered by the user, it checks for :
