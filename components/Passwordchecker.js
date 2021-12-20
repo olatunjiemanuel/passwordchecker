@@ -64,7 +64,7 @@ Passwordchecker = (props) => {
   };
 
   return (
-    <View>
+    <View style={{ flex: 1, marginTop: 50 }}>
       <View>
         <View
           style={[
