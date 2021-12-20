@@ -22,6 +22,7 @@ Passwordchecker = (props) => {
   const [checkcircle4, setcheckcircle4] = useState("gray");
   const [infouser, setinfouser] = useState({ info: "" });
 
+  // initializing the input in order for state management to be applied
   const { info } = infouser;
 
   // does this operation when the onPress function is triggered
