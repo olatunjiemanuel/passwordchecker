@@ -20,14 +20,16 @@ Passwordchecker = (props) => {
   const [checkcircle2, setcheckcircle2] = useState("gray");
   const [checkcircle3, setcheckcircle3] = useState("gray");
   const [checkcircle4, setcheckcircle4] = useState("gray");
-  const [info, setinfo] = useState({ info: "" });
+  const [infouser, setinfouser] = useState({ info: "" });
 
-  // does thos operation when the onPress function is triggered
+  const { info } = infouser;
+
+  // does this operation when the onPress function is triggered
   const onPressHandler = () => {
     setIsSecureEntry((prev) => !prev);
   };
 
-  // runs through this opeartion when text in the input field is changed
+  // runs through this code block when text in the input field is changed
   const onChangeHandler = (info) => {
     noofcharchecker(info);
     Upperandlowercasecheck(info);
@@ -35,29 +37,29 @@ Passwordchecker = (props) => {
     hasspecialchar(info);
   };
 
-  // checking for no of characters in user input
+  // this block of code checks for no of characters in user input
   const noofcharchecker = (info) => {
-    setinfo(info);
+    setinfouser(info);
     info.length >= 8 ? setcheckcircle1("blue") : setcheckcircle1("gray");
   };
 
-  // checking for upper and lowerCase characters in user input
+  // this block of code checks for upper and lowerCase characters in user input
   const Upperandlowercasecheck = (info) => {
-    setinfo(info);
+    setinfouser(info);
     info.toUpperCase() != info && info.toLowerCase() != info
       ? setcheckcircle2("blue")
       : setcheckcircle2("gray");
   };
 
-  // checking for numbers in user input
+  // this block of code checks for numbers in user input using regEx expressions
   const numchecker = (info) => {
-    setinfo(info);
+    setinfouser(info);
     /\d/.test(info) ? setcheckcircle3("blue") : setcheckcircle3("gray");
   };
 
-  // checking for special characters in user input
+  // this block of code checks for special characters in user input using regEx expressions
   const hasspecialchar = (info) => {
-    setinfo(info);
+    setinfouser(info);
     info.match(/\W/) ? setcheckcircle4("blue") : setcheckcircle4("gray");
   };
 
