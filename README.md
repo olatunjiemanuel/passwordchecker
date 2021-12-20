@@ -10,5 +10,8 @@ It also has a show/hide password button which controls the state of the text inp
 The UI is made as simple as possible so it can be reused without any difficulties.
 This side project helped me practice useState write cleaner code using components and passing props to those components.
 Please see below video to see what how the code runs via expo
-[![Watch the video](https://github.com/olatunjiemanuel/passwordchecker/blob/master/assets/SampleVideo.MP4)
-![Sample Video2](https://github.com/olatunjiemanuel/passwordchecker/blob/master/assets/SampleVideo.MP4)
+
+
+https://user-images.githubusercontent.com/93155336/146791998-5c3bb697-24c0-458e-b4f6-d1145471b97a.MP4
+
+
